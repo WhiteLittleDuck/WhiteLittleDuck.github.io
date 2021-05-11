@@ -155,6 +155,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Diary-2021-5-11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/11/Diary-2021-5-11/">Diary-2021-5-11</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/11/Diary-2021-5-11/" class="archive-article-date">
+  	<time datetime="2021-05-11T02:48:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Vue-读API后控件刷新"><a href="#Vue-读API后控件刷新" class="headerlink" title="Vue 读API后控件刷新"></a>Vue 读API后控件刷新</h1><p>事实证明，什么$nexttick啥的，不如翻源码自己造 orz</p>
+<h2 id="父组件调用子组件方法"><a href="#父组件调用子组件方法" class="headerlink" title="父组件调用子组件方法"></a>父组件调用子组件方法</h2><ul>
+<li><p>父组件html: 加ref标注名称</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">children</span> <span class="attr">ref</span>=<span class="string">&quot;nickname&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">children</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>父组件script: 调用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">this</span>.$refs.header.属性名</span><br><span class="line"><span class="built_in">this</span>.$refs.header.方法名</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="贴一个axios的板子"><a href="#贴一个axios的板子" class="headerlink" title="贴一个axios的板子"></a>贴一个axios的板子</h2><ul>
+<li><p>下载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios</span><br></pre></td></tr></table></figure></li>
+<li><p>导入需要的vue文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import axios from &#39;axios&#39;</span><br></pre></td></tr></table></figure></li>
+<li><p>用的板子</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> that = <span class="built_in">this</span>;</span><br><span class="line">axios.get(<span class="string">&quot;/api/app?id=&quot;</span>+appid).then(</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span><br><span class="line">  	<span class="built_in">console</span>.log(response.data);</span><br><span class="line">    <span class="keyword">if</span> (response.data[<span class="string">&quot;meta&quot;</span>][<span class="string">&quot;status&quot;</span>] == <span class="number">200</span>) &#123;</span><br><span class="line">      <span class="keyword">var</span> info = response.data[<span class="string">&quot;data&quot;</span>][<span class="string">&quot;info&quot;</span>];</span><br><span class="line">      that.appInfo=info;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      alert(<span class="string">&quot;something goes wrong!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;&#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/11/Diary-2021-5-11/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Diary-2021-5-9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
