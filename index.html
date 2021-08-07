@@ -155,6 +155,85 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Diary-2021-8-7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/07/Diary-2021-8-7/">Diary 2021/8/7</a>
+    </h1>
+  
+
+        
+        <a href="/2021/08/07/Diary-2021-8-7/" class="archive-article-date">
+  	<time datetime="2021-08-07T03:49:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ADB-and-scrcpy"><a href="#ADB-and-scrcpy" class="headerlink" title="ADB and scrcpy"></a>ADB and scrcpy</h1><ul>
+<li><p>adb  -d :use USB device</p>
+</li>
+<li><p>adb device: list connected device</p>
+</li>
+<li><p>adb push [–sync] [-z ALGORITHM] [-Z]: copy local files/directories to device</p>
+<ul>
+<li>–sync: 只push host比device更newere的版本</li>
+<li>-n: dry run push 不在device filesystem中的</li>
+<li>-z: enable compression with a specified algorithm</li>
+</ul>
+</li>
+</ul>
+<p>abd usb<br>abd devices<br>abd install xxx.apk</p>
+<p>scrcpy –window-title ‘My device’<br>.不使用参数：adb shell pm list packages，打印设备/模拟器上的所有软件包<br>使用-f参数：adb shell pm list packages -f,输出包和包相关联的文件<br>使用-d参数：adb shell pm list packages -d,只输出禁用的包。由于本机禁用没有，输出为空。<br>使用-e参数：adb shell pm list packages -e,只输出启用的包。<br>使用-s参数：adb shell pm list packages -s,只输出系统的包。<br>使用-3参数：adb shell pm list packages -3,只输出第三方的包。<br>使用-i参数：adb shell pm list packages -i,只输出包和安装信息（安装来源）。<br>使用-u参数：adb shell pm list packages -u,只输出包和未安装包信息（安装来源）<br>使用–user参数：adb shell pm list packages –user <USER_ID>，根据用户id查询用户的空间的所有包，USER_ID代表当前连接设备的顺序，从零开始：<br>使用-e参数且设置过滤条件：adb shell pm list packages -e “ximalaya”,只输出启用的包。</p>
+<p>adb uninstall com.DefaultCompany.xxx</p>
+<p>SDK 在Unity 中的设置： Edit&gt;Preference&gt;External Tool&gt;SDK</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/08/07/Diary-2021-8-7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Diary-2021-5-14" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
